@@ -1048,7 +1048,6 @@ with gr.Blocks(
 # START APPLICATION
 # ============================================================
 
-
 if __name__ == "__main__":
 
     if "load_knowledge_base" in globals():
