@@ -1048,12 +1048,18 @@ with gr.Blocks(
 # START APPLICATION
 # ============================================================
 
+
 if __name__ == "__main__":
 
-    # Restore the existing FAISS index if your persistence
-    # functions are present in app.py.
     if "load_knowledge_base" in globals():
         load_knowledge_base()
 
     print("Launching StudyMate AI...")
-    demo.launch(inbrowser=True)
+
+    import os
+
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 10000)),
+        inbrowser=False
+    )
