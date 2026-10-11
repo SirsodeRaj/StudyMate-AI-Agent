@@ -1,0 +1,9 @@
+gradio
+numpy
+torch
+faiss-cpu
+pypdf
+sentence-transformers
+langchain-text-splitters
+transformers
+sentencepiece
